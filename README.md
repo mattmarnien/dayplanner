@@ -7,4 +7,5 @@ This app is a single-day planner broken down by hours from 8 am to 6 pm. The app
 https://mattmarnien.github.io/dayplanner/
 
 # Screenshot
-![images/dayPlanner.PNG]
+![Image of Day Planner - Desktop](images/dayPlanner.PNG)
+
