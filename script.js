@@ -33,12 +33,13 @@ for (let i = 0; i < hoursArr.length; i++) {
 
 
   var oldInfo = JSON.parse(localStorage.getItem("events"));
-  console.log(oldInfo);
+  if (oldInfo !== null){
   for (let j = 0; j < oldInfo.length; j++) {
     if (oldInfo[j].dataId === hoursArr[i]) {
       newEventSection.text(oldInfo[j].text);
     }
   }
+}
   console.log(currentHour);
   var timeTest;
   if (hoursArr[i] < 8) {
