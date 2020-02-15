@@ -12,13 +12,13 @@ for (let i = 0; i < hoursArr.length; i++) {
   var newEventSection = $("<section>");
   var newSaveDiv = $("<div>");
   var newIcon = $("<i>");
-  newTimeDiv.attr("class", "col-1 time justify-center rounded-left pt-4");
-  newEventSection.attr("class", "col-10 event justify-center border-left border-right border-dark pt-4");
+  newTimeDiv.attr("class", "col-md-1 time justify-center rounded-left pt-4");
+  newEventSection.attr("class", "col-md-10 event justify-center border-left border-right border-dark pt-4");
   newEventSection.attr("dataId", hoursArr[i])
   newEventSection.attr("contenteditable", "true");
-  newSaveDiv.attr("class", "col-1 save align-middle pt-4 pl-4 rounded-right");
+  newSaveDiv.attr("class", "col-sm-1 save align-middle pt-4 pl-4 rounded-right");
   newSaveDiv.attr("dataId", hoursArr[i]); 
-  newIcon.attr("class", "far fa-save fa-2x m-auto d-block");
+  newIcon.attr("class", "far fa-save col-1");
   newTimeDiv.text(hoursArr[i]);
   newEventSection.text("");
   newRowDiv.append(newTimeDiv, newEventSection, newSaveDiv);
